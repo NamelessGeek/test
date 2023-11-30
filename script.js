@@ -7,7 +7,7 @@ const noBtn = document.querySelector(".no-btn");
 // Array to store the GIF URLs
 const gifUrls = [
   "https://media.giphy.com/media/UMon0fuimoAN9ueUNP/giphy.gif",
-  "https://media.giphy.com/media/QLiqUx7aHg10bl5FVj/giphy.gif"
+  "https://media.giphy.com/media/5fOiRnJOUnTMY/giphy.gif"
 ];
 
 // Function to preload GIFs
