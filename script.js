@@ -4,16 +4,31 @@ const gif = document.querySelector(".gif");
 const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
 
+// Array to store the GIF URLs
+const gifUrls = [
+  "https://media.giphy.com/media/UMon0fuimoAN9ueUNP/giphy.gif",
+  "https://media.giphy.com/media/QLiqUx7aHg10bl5FVj/giphy.gif"
+];
+
+// Function to preload GIFs
+function preloadGifs(urls) {
+  urls.forEach(url => {
+    const img = new Image();
+    img.src = url;
+  });
+}
+
+// Preload the GIFs
+preloadGifs(gifUrls);
+
 yesBtn.addEventListener("click", () => {
   question.innerHTML = "Yay, see you on the 18th!";
-  gif.src =
-    "https://media.giphy.com/media/UMon0fuimoAN9ueUNP/giphy.gif";
+  gif.src = gifUrls[0];
 });
 
 noBtn.addEventListener("click", () => {
   question.innerHTML = "Are you Sure?";
-  gif.src =
-    "https://media.giphy.com/media/QLiqUx7aHg10bl5FVj/giphy.gif";
+  gif.src = gifUrls[1];
 });
 
 /*noBtn.addEventListener("mouseover", () => {
