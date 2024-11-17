@@ -26,12 +26,12 @@ yesBtn.addEventListener("click", () => {
   gif.src = gifUrls[0];
 });
 
-noBtn.addEventListener("click", () => {
+/*noBtn.addEventListener("click", () => {
   question.innerHTML = "Are you Sure?";
   gif.src = gifUrls[1];
-});
+});*/
 
-/*noBtn.addEventListener("mouseover", () => {
+noBtn.addEventListener("mouseover", () => {
   const noBtnRect = noBtn.getBoundingClientRect();
   const maxX = window.innerWidth - noBtnRect.width;
   const maxY = window.innerHeight - noBtnRect.height;
@@ -41,4 +41,4 @@ noBtn.addEventListener("click", () => {
 
   noBtn.style.left = randomX + "px";
   noBtn.style.top = randomY + "px";
-});*/
+});
